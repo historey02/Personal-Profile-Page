@@ -1,101 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio for Benjamin Storey, a self taught aspiring web developer building modern websites">
-    <meta name="keywords" content="Portfolio, web developer, JavaScript, HTML, CSS, full-stack">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio for Benjamin Storey, a self taught aspiring web developer building modern websites"
+    />
+    <meta
+      name="keywords"
+      content="Portfolio, web developer, JavaScript, HTML, CSS, full-stack"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <!--Font: Crimson Pro-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+    />
     <!--Font Raleway and Roboto-->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Ben's Portfolio Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <header aria-label="header">
-        <h1 id="title">Storey Web Development</h1>
-        <nav id="nav-bar">
-            <ul>
-                <li id="nav-about"><a href="#about-me">About Me</a></li>
-                <li id="nav-projects"><a href="#projects">Projects</a></li>
-                <li id="nav-contact"><a href="#contact-me">Contact Me</a></li>
-            </ul>
-        </nav>
+      <h1 id="title">Storey Web Development</h1>
+      <nav id="nav-bar">
+        <ul>
+          <li id="nav-about"><a href="#about-me">About Me</a></li>
+          <li id="nav-projects"><a href="#projects">Projects</a></li>
+          <li id="nav-contact"><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="about-me" aria-label="about-me-section">
-            <h2>About Me</h2>
-            <p>
-    Hi, I'm Benjamin Storey — a self-taught web developer passionate about building clean, functional websites and web apps. I specialize in HTML, CSS, and JavaScript, and I'm working my way toward becoming a full-stack developer.
-  </p>
-  <p>
-    I love solving problems with code, learning new technologies, and creating projects that blend creativity with functionality. Whether it's a simple portfolio site or a complex interactive experience, I enjoy bringing ideas to life in the browser.
-  </p>
-  <p>
-    When I'm not coding, you'll find me exploring a trail, playing games with my brother, or diving into new skills just for the fun of learning.
-  </p>
-  <div id="photos-container">
-    <figure>
-    <img src="Assests/Waffle Fry.jpg" alt="Me holding a waffle fry over my head in the sunset" loading="lazy">
-  </figure>
-  <figure>
-    <img src="Assests/White Coat.jpg" alt="Me in a white coat" loading="lazy">
-  </figure>
-  </div>
-        </section>
-        <hr>
-        <section id="projects" aria-label="projects section">
-            <h2>Projects</h2>
-            <p>Here you can find some of my best works!</p>
-            <div class="projects-container">
-                <a href="Projects/HedgehogGame/index.html" target="_blank" class="project-card">
-                    <figure><img src="Assests/Hedgehog House Screenshot.png" alt="A silly game about endless adorable hedgehogs" loading="lazy"></figure>
-                    <h3>Hedgehog House</h3>
-                    <figcaption>This is my first game since learning web development. It's a cozy game about buying an endless amount of adorable (and profitable) hedgehogs.</figcaption>
-                </a>
-                <a href="Projects/Sudoku Solver/index.html" target="_blank" class="project-card">
-                    <figure><img src="Assests/Sudoku Solver Screenshot.png" alt="A Sudoku Puzzle Solver" loading="lazy"></figure>
-                    <h3>Sudoku Puzzle Solver</h3>
-                    <figcaption>This puzzle solver currently only solves this exact puzzle. It was my first foray into using JavaScript for a project of my own.</figcaption>
-                </a>
-                <a href="Projects/Snake Game/index.html" target="_blank" class="project-card">
-                    <figure><img src="Assests/Snake Game.png" alt="Snake Game" loading="lazy"></figure>
-                    <h3>Snake Game</h3>
-                    <figcaption>My attempt to recreate a classic video game using JS Canvas</figcaption>
-                </a>
-                <a href="Projects/Maze Generator/index.html" target="_blank" class="project-card">
-                    <figure><img src="Assests/Maze Generator.png" alt="A maze generator" loading="lazy"></figure>
-                    <h3>Maze Generator Game</h3>
-                    <figcaption>Inspired by my younger brother's insistence that I make a maze for him, I decided not to make him one maze, but an infinite number of mazes!</figcaption>
-                </a>
-            </div>
-        </section>
-        <hr>
-        <section id="contact-me" aria-label="contact me section">
-            <h2>Contact Me</h2>
-            <form action="submit">
-                <fieldset>
-                    <label for="name-input">Name: </label>
-                    <input name="name" id="name-input" type="text" required placeholder="First Last">
-                    <label for="subject-input">Subject: </label>
-                    <input name="subject" id="subject-input" type="text" required placeholder="What can I do for you?">
-                    <label for="message-textarea">Message: </label>
-                    <textarea name="message" id="message-textarea" rows="5" color="#1d1d1d">Send me a line, let's make something together!</textarea>
-                    <button id="submit-button" type="button">Send'er to me! <i class="fas fa-paper-plane"></i></button>
-                </fieldset>
-                
-            </form>
-        </section>
-
+      <section id="about-me" aria-label="about-me-section">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Benjamin Storey — a self-taught web developer passionate about
+          building clean, functional websites and web apps. I specialize in
+          HTML, CSS, and JavaScript, and I'm working my way toward becoming a
+          full-stack developer.
+        </p>
+        <p>
+          I love solving problems with code, learning new technologies, and
+          creating projects that blend creativity with functionality. Whether
+          it's a simple portfolio site or a complex interactive experience, I
+          enjoy bringing ideas to life in the browser.
+        </p>
+        <p>
+          When I'm not coding, you'll find me exploring a trail, playing games
+          with my brother, or diving into new skills just for the fun of
+          learning!
+        </p>
+        <div id="photos-container">
+          <figure>
+            <img
+              src="Assests/Waffle Fry.jpg"
+              alt="Me holding a waffle fry over my head in the sunset"
+              loading="lazy"
+            />
+          </figure>
+          <figure>
+            <img
+              src="Assests/White Coat.jpg"
+              alt="Me in a white coat"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+      <hr />
+      <section id="projects" aria-label="projects section">
+        <h2>Projects</h2>
+        <p>Here you can find some of my best works!</p>
+        <div class="projects-container">
+          <a
+            href="Projects/HedgehogGame/index.html"
+            target="_blank"
+            class="project-card"
+          >
+            <figure>
+              <img
+                src="Assests/Hedgehog House Screenshot.png"
+                alt="A silly game about endless adorable hedgehogs"
+                loading="lazy"
+              />
+            </figure>
+            <h3>Hedgehog House</h3>
+            <figcaption>
+              This is my first game since learning web development. It's a cozy
+              game about buying an endless amount of adorable (and profitable)
+              hedgehogs.
+            </figcaption>
+          </a>
+          <a
+            href="Projects/Sudoku Solver/index.html"
+            target="_blank"
+            class="project-card"
+          >
+            <figure>
+              <img
+                src="Assests/Sudoku Solver Screenshot.png"
+                alt="A Sudoku Puzzle Solver"
+                loading="lazy"
+              />
+            </figure>
+            <h3>Sudoku Puzzle Solver</h3>
+            <figcaption>
+              This puzzle solver currently only solves this exact puzzle. It was
+              my first foray into using JavaScript for a project of my own.
+            </figcaption>
+          </a>
+          <a
+            href="Projects/Snake Game/index.html"
+            target="_blank"
+            class="project-card"
+          >
+            <figure>
+              <img
+                src="Assests/Snake Game.png"
+                alt="Snake Game"
+                loading="lazy"
+              />
+            </figure>
+            <h3>Snake Game</h3>
+            <figcaption>
+              My attempt to recreate a classic video game using JS Canvas
+            </figcaption>
+          </a>
+          <a
+            href="Projects/Maze Generator/index.html"
+            target="_blank"
+            class="project-card"
+          >
+            <figure>
+              <img
+                src="Assests/Maze Generator.png"
+                alt="A maze generator"
+                loading="lazy"
+              />
+            </figure>
+            <h3>Maze Generator Game</h3>
+            <figcaption>
+              Inspired by my younger brother's insistence that I make a maze for
+              him, I decided not to make him one maze, but an infinite number of
+              mazes!
+            </figcaption>
+          </a>
+        </div>
+      </section>
+      <hr />
+      <section id="contact-me" aria-label="contact me section">
+        <h2>Contact Me</h2>
+        <form action="submit">
+          <fieldset>
+            <label for="name-input">Name: </label>
+            <input
+              name="name"
+              id="name-input"
+              type="text"
+              required
+              placeholder="First Last"
+            />
+            <label for="subject-input">Subject: </label>
+            <input
+              name="subject"
+              id="subject-input"
+              type="text"
+              required
+              placeholder="What can I do for you?"
+            />
+            <label for="message-textarea">Message: </label>
+            <textarea
+              name="message"
+              id="message-textarea"
+              rows="5"
+              color="#1d1d1d"
+            >
+Send me a line, let's make something together!</textarea
+            >
+            <button id="submit-button" type="button">
+              Send'er to me! <i class="fas fa-paper-plane"></i>
+            </button>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer aria-label="footer">
-        <p><i class="fas fa-envelope"></i> historey02@gmail.com</p>
-        <p><i class="fas fa-phone">(570) 702-2238</i></p>
-        <address>Clarks Summit, PA</address>
+      <p><i class="fas fa-envelope"></i> historey02@gmail.com</p>
+      <p><i class="fas fa-phone">(570) 702-2238</i></p>
+      <address>Clarks Summit, PA</address>
     </footer>
-    
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
