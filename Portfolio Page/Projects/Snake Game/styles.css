@@ -1,0 +1,52 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+#canvas {
+    border: 10px solid rgb(15, 15, 88)
+}
+
+#game-over-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    border-radius: 10px;
+    z-index: 10;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 36px;
+    background-image: linear-gradient(to bottom, #4facfe, #00f2fe);
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, #1a5d98, #0d3d71);
+}

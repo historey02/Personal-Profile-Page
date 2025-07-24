@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sudoku Solver</h1>
+    <div id="full-puzzle">
+        <div id="big-box-1" class="big-box">
+            <div class="box" id="00">1</div>
+            <div class="box" id="10">1</div>
+            <div class="box" id="20">1</div>
+            <div class="box" id="01">1</div>
+            <div class="box" id="11">1</div>
+            <div class="box" id="21">1</div>
+            <div class="box" id="02">1</div>
+            <div class="box" id="12">1</div>
+            <div class="box" id="22">1</div>
+        </div>
+        <div id="big-box-2" class="big-box">
+            <div class="box" id="30">2</div>
+            <div class="box" id="40">2</div>
+            <div class="box" id="50">2</div>
+            <div class="box" id="31">2</div>
+            <div class="box" id="41">2</div>
+            <div class="box" id="51">2</div>
+            <div class="box" id="32">2</div>
+            <div class="box" id="42">2</div>
+            <div class="box" id="52">2</div>
+        </div>
+         <div id="big-box-3" class="big-box">
+            <div class="box" id="60">3</div>
+            <div class="box" id="70">3</div>
+            <div class="box" id="80">3</div>
+            <div class="box" id="61">3</div>
+            <div class="box" id="71">3</div>
+            <div class="box" id="81">3</div>
+            <div class="box" id="62">3</div>
+            <div class="box" id="72">3</div>
+            <div class="box" id="82">3</div>
+        </div>
+         <div id="big-box-4" class="big-box">
+            <div class="box" id="03">4</div>
+            <div class="box" id="13">4</div>
+            <div class="box" id="23">4</div>
+            <div class="box" id="04">4</div>
+            <div class="box" id="14">4</div>
+            <div class="box" id="24">4</div>
+            <div class="box" id="05">4</div>
+            <div class="box" id="15">4</div>
+            <div class="box" id="25">4</div>
+        </div>
+         <div id="big-box-5" class="big-box">
+            <div class="box" id="33">5</div>
+            <div class="box" id="43">5</div>
+            <div class="box" id="53">5</div>
+            <div class="box" id="34">5</div>
+            <div class="box" id="44">5</div>
+            <div class="box" id="54">5</div>
+            <div class="box" id="35">5</div>
+            <div class="box" id="45">5</div>
+            <div class="box" id="55">5</div>
+        </div>
+         <div id="big-box-6" class="big-box">
+            <div class="box" id="63">6</div>
+            <div class="box" id="73">6</div>
+            <div class="box" id="83">6</div>
+            <div class="box" id="64">6</div>
+            <div class="box" id="74">6</div>
+            <div class="box" id="84">6</div>
+            <div class="box" id="65">6</div>
+            <div class="box" id="75">6</div>
+            <div class="box" id="85">6</div>
+        </div>
+         <div id="big-box-7" class="big-box">
+            <div class="box" id="06">7</div>
+            <div class="box" id="16">7</div>
+            <div class="box" id="26">7</div>
+            <div class="box" id="07">7</div>
+            <div class="box" id="17">7</div>
+            <div class="box" id="27">7</div>
+            <div class="box" id="08">7</div>
+            <div class="box" id="18">7</div>
+            <div class="box" id="28">7</div>
+        </div>
+         <div id="big-box-8" class="big-box">
+            <div class="box" id="36">8</div>
+            <div class="box" id="46">8</div>
+            <div class="box" id="56">8</div>
+            <div class="box" id="37">8</div>
+            <div class="box" id="47">8</div>
+            <div class="box" id="57">8</div>
+            <div class="box" id="38">8</div>
+            <div class="box" id="48">8</div>
+            <div class="box" id="58">8</div>
+        </div>
+         <div id="big-box-9" class="big-box">
+            <div class="box" id="66">9</div>
+            <div class="box" id="76">9</div>
+            <div class="box" id="86">9</div>
+            <div class="box" id="67">9</div>
+            <div class="box" id="77">9</div>
+            <div class="box" id="87">9</div>
+            <div class="box" id="68">9</div>
+            <div class="box" id="78">9</div>
+            <div class="box" id="88">9</div>
+        </div>
+    </div>
+    <button id="solve-button" type="button">Solve!</button>
+    <script src="./script.js"></script>
+</body>
+</html>

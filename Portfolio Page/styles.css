@@ -1,0 +1,198 @@
+/* Color Pallet from Chat GPT
+    Slate: #334155 (header/footer or text)
+    Cool Gray: #E2E8F0 (background)
+    Indigo: #6366F1 (buttons, links)
+    Teal: #14B8A6 (secondary accent)
+    White: #FFFFFF (content background)
+*/
+
+/* Fonts
+Raleway and Roboto
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+*/
+* {
+    --Slate: #334155;
+    --Cool-Gray: #E2E8F0;
+    --Indigo: #6366F1;
+    --Teal: #14B8A6;
+    --White: #FFF;
+
+}
+
+html {
+    background-color: var(--Cool-Gray);
+}
+
+body {
+    margin: 0;
+    color: #1d1d1d;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 0 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--Slate);
+    color: var(--Teal)
+}
+
+#nav-bar {
+    gap: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+li a {
+    color: var(--Teal);
+    text-decoration: none;
+    font-size: 1.5rem;
+    scroll-behavior: smooth;
+}
+
+ul a:hover {
+    color: var(--Indigo)
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+section {
+    margin: 5vh 0;
+}
+
+main {
+    padding: 5vw;
+}
+
+hr {
+    border: 2px solid var(--Indigo)
+}
+
+#about-me {
+    text-align: center;
+}
+
+#about-me p,
+#about-me h2 {
+    text-align: left;
+}
+
+#about-me p {
+    line-height: 1.6;
+}
+
+#about-me img {
+    width: 100px
+}
+
+#photos-container {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-card {
+    width: 400px;
+    text-align: center;
+    border: 2px solid var(--Slate);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+    background-color: var(--Teal);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card img {
+    width: 80%;
+    border: 2px solid var(--Slate);
+    border-radius: 10px;
+}
+
+fieldset {
+    padding: 1vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 15px;
+    border: 4px solid var(--Slate);
+}
+
+input,
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 2px solid var(--Slate)
+}
+
+button {
+    min-width: 200px;
+    max-width: 250px;
+    height: 60px;
+    margin: 15px auto;
+    background-image: linear-gradient(to right, #45466f, var(--Indigo));
+    background-color: var(--Indigo);
+    border: 3px solid #0a0b35;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6366F1;
+    padding-bottom: 3vh;
+}
+
+footer> :first-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        padding: 0;
+    }
+}

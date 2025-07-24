@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+canvas {
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+#win {
+    display: none;
+}
