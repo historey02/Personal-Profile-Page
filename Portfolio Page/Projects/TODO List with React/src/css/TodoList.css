@@ -1,0 +1,70 @@
+* {
+    --all-button-color: rgb(249, 181, 233);
+    --todo-button-color: rgb(247, 170, 170);
+    --completed-button-color: rgb(152, 236, 152);
+    --add-button-color: rgb(129, 240, 246);
+}
+
+.todo-list {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 0px 10px 10px 10px;
+}
+
+.nav-bar {
+    width: 100%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.nav-bar>button {
+    font-size: 1.4em;
+    border-radius: 10px;
+}
+
+input,
+.add-button {
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: var(--add-button-color);
+    width: 20%;
+}
+
+.all-button {
+    background-color: var(--all-button-color);
+    min-width: 125px;
+}
+
+.todo-button {
+    background-color: var(--todo-button-color);
+    min-width: 125px;
+}
+
+.completed-button {
+    background-color: var(--completed-button-color);
+    min-width: 125px;
+}
